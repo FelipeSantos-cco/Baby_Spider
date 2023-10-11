@@ -19,4 +19,6 @@ Desenvolvimento de Crawler para a aula de Calculo Computacional e Estatística (
 
 
 ### Material de Pesquisa
+- [Web Scraping e Web Crawling são Legais ou Ilegais?](https://blog.dsacademy.com.br/web-scraping-e-web-crawling-sao-legais-ou-ilegais/)
 - [Documentação do Scrapy](https://docs.scrapy.org/en/latest/index.html)
+- [WEB SCRAPING EM PÁGINAS BASEADAS EM JAVASCRIPT COM SCRAPY](https://pythonhelp.wordpress.com/2016/10/22/extraindo-dados-de-paginas-baseadas-em-javascript-com-scrapy/)
