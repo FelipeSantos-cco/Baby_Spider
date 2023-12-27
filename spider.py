@@ -41,14 +41,13 @@ print('''
 \t\t\t\t       $$     $$$$$$$$$$$$     $$       
 \t\t\t\t       $$       $$$$$$$$       $$       
 \t\t\t\t        $$                    $$        
-      
 ''')
 
 parser = argparse.ArgumentParser(prog="Spider",
                                  description='''
-                                 ~~ BABY SPIDER ~~
-                                 [$] Programa de Download de arquivos e automação da criação de scripts em R\n
-                                 [@] Felipe Santos <-> https://github.com/FelipeSantos-cco/
+                                 \n~~ BABY SPIDER ~~
+                                 \n[$] Programa de Download de arquivos e automação da criação de scripts em R\n
+                                 \n[@] Felipe Santos <-> https://github.com/FelipeSantos-cco/
                                  ''')
 
 # Argumentos
@@ -120,7 +119,7 @@ def extrair_zip_all(nomeZIP):
 
 
 if getattr(args, "zip"):
-    pacoteZIP = f'zip_ID_{randrange(10, 99)}.zip'    
+    pacoteZIP = f'zip_ID_{randrange(10, 99)}.zip'
     download_zip(args.url, pacoteZIP)
 
     if getattr(args, "zip_all"):
@@ -129,10 +128,10 @@ if getattr(args, "zip"):
 elif getattr(args, "url"):
     arquivo = f'arquivo_ID_{randrange(10, 99)}.{args.extencao}'
     download_arquivo(args.url, arquivo)
-    
+
     if getattr(args, "r_script"):
         scriptR = f'script_ID_{randrange(10, 99)}.r'
-        
+
         codigoR = f'dados <- read.csv({arquivo})\nView(dados)'
 
         arquivo = open(scriptR, "x", encoding="utf-8")
@@ -140,4 +139,3 @@ elif getattr(args, "url"):
         arquivo.write(codigoR)
         arquivo.close()
         print(f'[ :) ]=> Script R criado com sucesso. Script: {scriptR}')
-
